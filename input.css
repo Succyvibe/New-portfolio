@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(//db.onlinewebfonts.com/c/040a78b437acd0433612f92e61d04a1b?family=Gilroy-Medium);
+
+body {
+    font-family: Gilroy-Medium;
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+.section-container {
+    width: 1400px;
+    margin: 0 auto;
+
+}
+
+.content-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width:768px) {
+    .section-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    .section-container {
+        width: 100%;
+    }
+
+    .content-box {
+        flex-direction: column;
+    }
+}
